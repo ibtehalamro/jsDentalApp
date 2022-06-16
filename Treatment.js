@@ -40,7 +40,7 @@ class Treatment {
     addTeethTreatment = (teethNumber, treatment) => {
         if (treatment === undefined) throw new Error("Treatment is undefined")
         if (this.#isValidTeethNumber(parseInt(teethNumber)))
-            this.#treatmentPlan.set(teethNumber, treatment);
+            this.#treatmentPlan.set(parseInt(teethNumber), treatment);
     }
 }
 

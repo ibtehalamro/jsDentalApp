@@ -13,7 +13,7 @@ while (true) {
     userLine = input("Enter your option ->");
     console.log('****************************')
     if (userLine.toLowerCase() === "exit") break;
-    
+
     dentalManager.userOption(parseInt(userLine));
 }
 
